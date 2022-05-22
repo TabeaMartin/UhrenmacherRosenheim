@@ -40,11 +40,12 @@ a{
 
 a:link, a:visited {text-decoration: none;}
 
-/*article{font-family: NHG_Roman;}*/
 article{
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
+	font-size: 12px;
 }
+
 
 /*Breakpoint 0, alles unter 960px*/
 #body_wrapper{
@@ -53,8 +54,17 @@ article{
 	background-color: #6494aa;
 	display: flex;
 }
-#content{margin: auto;	width: 480px;}
-.padding{padding-left: 15px; padding-right: 15px;}
+
+#content{
+	margin: auto;
+	width: 480px;
+}
+
+.padding{
+	padding-left: 36px;
+	padding-right: 36px;
+	position: relative;
+}
 
 /*HEADER*/
 #top_logo{width: 100px; height: 100px;}
@@ -78,12 +88,12 @@ article{
 #slogan{
 	color: #0000b1;
 	font-weight: 300;
-	font-size: 10pt;
+	font-size: 10px;
 	/*transform: scaleY(1.2);*/
 }
 h4{
 	color: #0000b1;
-	font-size: 12pt;
+	font-size: 12px;
 }
 
 /*NAV*/
@@ -108,8 +118,6 @@ h4{
 }
 .nav_parts{display: flex;}
 
-.padding{position: relative;}
-
 nav{
 	background-color: #c8c9d7;
 	padding: 10px;
@@ -121,7 +129,7 @@ li{
 } 
 li>a{	
 	color: #4d4765;
-	font-size: 12pt;
+	font-size: 12px;
 }
 img{
 	width: 100%;
@@ -133,14 +141,12 @@ li>a:hover{color: #0000b1;}
 #intro{
 	background-color: #4d4765;
 	padding: 15px;
-	font-weight: 300;
-	font-style: normal;
 	color: #c8c9d7;
-	font-size: 10pt;
+	font-size: 10px;
 	text-align: center;
 }
 #bold_big{
-	font-size: 10pt;
+	font-size: 10px;
 	font-weight: 700;
 }
 #bold{
@@ -153,14 +159,15 @@ li>a:hover{color: #0000b1;}
 	width: 100%;
 	height: 10px;
 }
+
 .uhr{
 	background-color: #c8c9d7;
-	padding: 15px;
+	padding-bottom: 20px;
 }
-.uhr>article{font-size: 10pt;}
+
 h3{
 	color: #0000b1;
-	font-size: 12pt;
+	font-size: 12px;
 	font-weight: 700;
 	text-align: center;
 }
@@ -168,33 +175,44 @@ h3{
 /*FOOTER*/
 #footer_wrapper{
 	display: flex;
-	margin: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
+
 .footer{
 	width: 160px;
 	height: 120px;
 }
+
 .yellow_footer{
 	padding: 5px;
 	margin_top: 15px;
 	background-color: #e8cc61;
 	font-weight: 700;
-	font-size: 8pt;
+	font-size: 8px;
 	color: #0000b1;
 }
+
 .yellow_footer:hover{
 	transform: scale(1.2);
 }
+
 .normal_footer{
 	margin-top: 15px;
-	font-size: 6pt;
+	font-size: 6px;
 	color: #0000b1;
 }
+
+#bottom_logo_parent{
+	position: relative;
+}
+
 #bottom_logo{
 	width: 100px;
 	height: 100px;
-	position: relative;
+	position: absolute;
 	top: -15px;
+	right: 35px;
 }
 
 
