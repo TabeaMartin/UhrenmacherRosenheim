@@ -43,7 +43,6 @@ article{
 	background-color: #6494aa;
 	display: flex;
 }
-
 #content{
 	margin: auto;
 	width: 480px;
@@ -68,17 +67,23 @@ article{
 	right: 0;
 	bottom: 0;
 }
+
 .SoMeLogo{
 	color: #0000b1;
 	margin: 5px;
 }
-#header_ohneLogo{width: 320px;}
+
+#header_ohneLogo{
+	width: 320px; 
+	padding-top: 7px;
+}
 #header_puffer{height: 10px;}
 #slogan{
 	color: #0000b1;
 	font-weight: 300;
 	font-size: 10px;
 }
+
 h4{
 	color: #0000b1;
 	font-size: 12px;
@@ -88,10 +93,10 @@ h4{
 #nav_button{
   width: 30px;
   height: 30px;
-  background-color: #0000b1;
+  /*background-color: #0000b1;*/
   transition: transform 0.2s ease-in-out;
-  /*background-image: url("../img/burger.gif");
-  background-size: cover;*/
+  background-image: url("pics/burger_button.png");
+  background-size: cover;
 }
 #nav_button:hover{
   transform: scale(1.2);
@@ -101,6 +106,7 @@ h4{
   position: absolute;
   background-color: #c8c9d7;
   padding: 10px;
+  padding-left: 30px;
   margin-top: 5px;
   left: 0px;
 }
@@ -113,11 +119,12 @@ nav{
 li{
 	list-style: none;
 	padding: 5px;
-	width: 143.25px;
+	width: 136.5px;
 } 
 li>a{	
 	color: #4d4765;
-	font-size: 12px;
+	font-size: 16px;
+	font-weight: 700;
 }
 img{
 	width: 100%;
@@ -132,9 +139,10 @@ li>a:hover{color: #0000b1;}
 	color: #c8c9d7;
 	font-size: 10px;
 	text-align: center;
+	font-weight: 300;
 }
 #bold_big{
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
 }
 #bold{
@@ -153,9 +161,15 @@ li>a:hover{color: #0000b1;}
 	padding-bottom: 20px;
 }
 
+#uhr4{
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+#letzter_puffer{height: 0px;}
+
 h3{
 	color: #0000b1;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
 }
@@ -167,29 +181,27 @@ h3{
 	padding-bottom: 10px;
 }
 
-.footer{
-	width: 160px;
-	height: 120px;
-}
+.footer{height: 70px;}
 
 .yellow_button{
 	padding: 5px;
-	margin-top: 15px;
+	margin-top: 20px;
 	background-color: #e8cc61;
 	font-weight: 700;
-	font-size: 8px;
+	font-size: 10px;
 	color: #0000b1;
 	transition: font-size 0.2s ease-in-out;
 }
 
-.yellow_button:hover{
-	font-size: 10px;
-}
+.yellow_button:hover{font-size: 12px;}
 
 .normal_footer{
-	margin-top: 15px;
+	width: 170px;
+	margin-top: 10px;
 	font-size: 6px;
 	color: #0000b1;
+	font-weight: 300;
+	font-size: 10px;
 }
 
 #bottom_logo_parent{
@@ -200,7 +212,7 @@ h3{
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: -15px;
+	top: -10px;
 	right: 35px;
 }
 
@@ -211,12 +223,21 @@ h3{
 	#body_wrapper{
 		width: 960px;
 	}
-	#content{
-		display: flex;
-		flex-wrap: wrap;
-		width: 70%;
-		margin: auto;
-	}
+	#content{width: 960px;}
+
+	/*HEADER*/
+	#header_ohneLogo{width: 800px;}
+
+	/*NAV*/
+	.nav_parts{display: block;}
+
+	/*UHREN*/
+	#alle_uhren{display: block;}
+	#uhr3_puffer{height: 0px;}
+
+	.zwei_uhren{display: flex; }
+	.uhr{width: 480px;}
+
 }
 
 
@@ -227,6 +248,12 @@ h3{
 		width: 1920px;
 		display: block;
 	}
+	#content{width: 960px;}
+
+	/*HEADER*/
+	#header_ohneLogo{width: 1760px;}
+
+	/*NAV*/
 	article{width: calc(100% / 3);}
 	nav{
 		width: 100%;
@@ -238,5 +265,11 @@ h3{
 	li{
 		width: calc(100%/5);
 		text-align: center;
+	}
+
+		/*UHREN*/
+	.uhr{
+		width: 960px;
+		display: ;
 	}
 }
