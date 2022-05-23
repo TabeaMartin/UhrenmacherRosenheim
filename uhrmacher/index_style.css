@@ -15,17 +15,6 @@ Bold: font-weight: 700
 
 */
 
-/*FONT*/
-@font-face{
-	font-family: "NHG_Roman";
-	src: url("fonts/NHaasGroteskTXPro-55Rg.ttf")}
-@font-face{
-	font-family: "NHG_Medium";
-	src: url("fonts/NHaasGroteskTXPro-65Md.ttf")}
-@font-face{
-	font-family: "NHG_Bold";
-	src: url("fonts/NHaasGroteskTXPro-75Bd.ttf")}
-
 /*PAGE*/
 *{
 	margin: 0;
@@ -89,7 +78,6 @@ article{
 	color: #0000b1;
 	font-weight: 300;
 	font-size: 10px;
-	/*transform: scaleY(1.2);*/
 }
 h4{
 	color: #0000b1;
@@ -184,17 +172,18 @@ h3{
 	height: 120px;
 }
 
-.yellow_footer{
+.yellow_button{
 	padding: 5px;
-	margin_top: 15px;
+	margin-top: 15px;
 	background-color: #e8cc61;
 	font-weight: 700;
 	font-size: 8px;
 	color: #0000b1;
+	transition: font-size 0.2s ease-in-out;
 }
 
-.yellow_footer:hover{
-	transform: scale(1.2);
+.yellow_button:hover{
+	font-size: 10px;
 }
 
 .normal_footer{
