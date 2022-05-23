@@ -135,11 +135,12 @@ li>a:hover{color: #0000b1;}
 /*BANNER_INTRO*/
 #intro{
 	background-color: #4d4765;
-	padding: 15px;
 	color: #c8c9d7;
 	font-size: 10px;
 	text-align: center;
 	font-weight: 300;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 #bold_big{
 	font-size: 12px;
@@ -155,12 +156,13 @@ li>a:hover{color: #0000b1;}
 	width: 100%;
 	height: 10px;
 }
-
 .uhr{
 	background-color: #c8c9d7;
 	padding-bottom: 20px;
 }
+.uhr_foto{height: 480px}
 
+#text_puffer{height: 0px;}
 #uhr4{
 	padding-top: 20px; 
 	padding-bottom: 20px;
@@ -228,16 +230,28 @@ h3{
 	/*HEADER*/
 	#header_ohneLogo{width: 800px;}
 
+	/*INTRO*/
+	#intro{padding: 15px 110px;}
+
 	/*NAV*/
+	#nav_puffer{height: 96px;}
 	.nav_parts{display: block;}
 
 	/*UHREN*/
 	#alle_uhren{display: block;}
 	#uhr3_puffer{height: 0px;}
+	#text_puffer{height: 30px;}
 
 	.zwei_uhren{display: flex; }
-	.uhr{width: 480px;}
+	.uhr{
+		width: 480px;
+		background-color: #c8c9d7;
+		padding-bottom: 20px;
+	}
 
+	/*FOOTER*/
+	.normal_footer{
+	width: 200px;
 }
 
 
