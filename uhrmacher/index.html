@@ -28,12 +28,14 @@
 				    burgerMenu.style.display = "none";
 					}
 			}
+		</script>
+		<script>
 			function grow(id){
-				var burgerMenu = document.getElementById(id);
-				if(burgerMenu.style.display == "none" || burgerMenu.style.display == ""){
-				    test.style.width = "186px";
+				var nav = document.getElementById(id);
+				if(nav.style.display == "none" || nav.style.display == ""){
+				    nav.style.width = "186px";
 				}else{
-				    test.style.width = "10px";
+				    nav.style.width = "10px";
 					}
 			}
 		</script>
@@ -73,7 +75,7 @@
 				<div id="nav_banner_wrapper">
 				<!-- navigaiton -->
 					<nav id="test" class="padding">
-						<div id="nav_button" onClick="toggle('nav_all')" onclick="grow('test')"></div>
+						<div id="nav_button" onClick="toggle('nav_all')" onclick="grow('nav')"></div>
 						<div id="nav_all">
 							<ul class="nav_parts">
 					        	<li><a href="#">Home</a></li>
