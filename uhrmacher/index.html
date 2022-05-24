@@ -18,6 +18,27 @@
 	</head>
 
 	<body>
+		<!-- script -->
+		<script>
+			function toggle(id){
+				var burgerMenu = document.getElementById(id);
+				if(burgerMenu.style.display == "none" || burgerMenu.style.display == ""){
+				    burgerMenu.style.display = "block";
+				}else{
+				    burgerMenu.style.display = "none";
+					}
+			}
+			function grow(id){
+				var burgerMenu = document.getElementById(id);
+				if(burgerMenu.style.display == "none" || burgerMenu.style.display == ""){
+				    test.style.width = "186px";
+				}else{
+				    test.style.width = "10px";
+					}
+			}
+		</script>
+
+		<!-- body_content -->
 		<div id="body_wrapper">
 			<div id="content">
 				<!-- header_logo_some -->
@@ -26,10 +47,13 @@
 					<div id="header_ohneLogo">
 						<div id="header_puffer"></div>
 						<h4>Uhrmacher Rosenheim</h4>
-						<article id="slogan">
-							<br>
-							Die gute Adresse in Rosenheim<br>für hochwertige Armbanduhren
-						</article>
+						<div id="slogan_wrapper">
+							<article class="slogan"><br>Die gute Adresse in Rosenheim</article>
+							<div>
+								<div id="slogan_puffer"></div>
+								<article class="slogan">für hochwertige Armbanduhren</article>
+							</div>
+						</div>
 					</div>
 					<div id="SoMeParent">
 						<div id="SoMe">
@@ -46,39 +70,34 @@
 					</div>
 				</div>
 
+				<div id="nav_banner_wrapper">
 				<!-- navigaiton -->
-				<nav class="padding">
-					<div id="nav_button" onClick="toggle('nav_all')"></div>
-					<div id="nav_all">
-						<ul class="nav_parts">
-				        	<li><a href="#">Home</a></li>
-				        	<li><a href="#">Produkte</a></li>
-				        	<li><a href="#">Werkstatt</a></li>
-				        </ul>
-				        <ul class="nav_parts">
-				        	<li><a href="#">Disclaimer</a></li>
-				        	<li><a href="#">Geschichte</a></li>
-				        </ul>
-				        <div id="nav_puffer"></div>
-			        </div>
-				</nav>
+					<nav id="test" class="padding">
+						<div id="nav_button" onClick="toggle('nav_all')" onclick="grow('test')"></div>
+						<div id="nav_all">
+							<ul class="nav_parts">
+					        	<li><a href="#">Home</a></li>
+					        	<li><a href="#">Produkte</a></li>
+					        	<li><a href="#">Werkstatt</a></li>
+					        </ul>
+					        <ul class="nav_parts">
+					        	<li><a href="#">Disclaimer</a></li>
+					        	<li><a href="#">Geschichte</a></li>
+					        </ul>
+					        <div id="nav_puffer"></div>
+				        </div>
+					</nav>
 
-				<script>
-			      function toggle(id){
-			        var burgerMenu = document.getElementById(id);
-			        if(burgerMenu.style.display == "none" || burgerMenu.style.display == ""){
-			          burgerMenu.style.display = "block";
-			        }else{
-			          burgerMenu.style.display = "none";
-			        }
-			      }
-			    </script>
+				<!-- banner -->
+					<div>
+						<figure>
+							<img src="pics/banner.png" alt="offene Uhr" title="rosenheim_banner">
+						</figure>
+					</div>
+				</div>
 
-				<!-- banner_introduction -->
+				<!-- intro -->
 				<div>
-					<figure>
-						<img src="pics/banner.png" alt="offene Uhr" title="rosenheim_banner">
-					</figure>
 					<article id="intro" class="padding">
 						Sie möchten eine fachmännisch geprüfte Luxus-Armbanduhr aus zweiter Hand erwerben? 
 						<br>Sie suchen einen erfahrenen Servicepartner für Ihre Omega, Longines, Vintage-Rolex, Zenith oder Ebel?

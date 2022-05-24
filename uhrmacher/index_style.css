@@ -78,10 +78,11 @@ article{
 	padding-top: 7px;
 }
 #header_puffer{height: 10px;}
-#slogan{
+.slogan{
 	color: #0000b1;
 	font-weight: 300;
 	font-size: 10px;
+	padding-right: 2px;
 }
 
 h4{
@@ -229,13 +230,19 @@ h3{
 
 	/*HEADER*/
 	#header_ohneLogo{width: 800px;}
+	#slogan_wrapper{display: flex;}
+	#slogan_puffer{height: 13px;}
 
 	/*INTRO*/
 	#intro{padding: 15px 110px;}
 
 	/*NAV*/
+	#nav_banner_wrapper{display: flex;}
 	#nav_puffer{height: 96px;}
+
 	.nav_parts{display: block;}
+
+	nav{height: 219px; width: 10px;}
 
 	/*UHREN*/
 	#alle_uhren{display: block;}
