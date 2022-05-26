@@ -116,6 +116,7 @@ h4{
 nav{
 	background-color: #c8c9d7;
 	padding: 10px;
+	width: 408px;
 }
 li{
 	list-style: none;
@@ -242,7 +243,11 @@ h3{
 
 	.nav_parts{display: block;}
 
-	nav{height: 219px; width: 10px;}
+	nav{
+		height: 219px; 
+		width: 10px;
+	}
+	li{width: 83px;}
 
 	/*UHREN*/
 	#alle_uhren{display: block;}

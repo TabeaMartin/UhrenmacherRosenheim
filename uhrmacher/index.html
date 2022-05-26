@@ -26,17 +26,22 @@
 				    burgerMenu.style.display = "block";
 				}else{
 				    burgerMenu.style.display = "none";
-					}
+				}
 			}
 		</script>
 		<script>
 			function grow(id){
-				var nav = document.getElementById(id);
-				if(nav.style.display == "none" || nav.style.display == ""){
-				    nav.style.width = "186px";
-				}else{
-				    nav.style.width = "10px";
+				if (window.innerWidth >= 960 && window.innerWidth < 1920){
+					var nav = document.getElementById(id);
+					if(nav.style.display == "none" || nav.style.display == ""){
+						nav.style.display = "block";
+					    nav.style.width = "140px";
+					}else{
+						nav.style.display = "";
+					    nav.style.width = "13px";
 					}
+				}
+				else{return;}
 			}
 		</script>
 
