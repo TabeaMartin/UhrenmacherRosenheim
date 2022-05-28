@@ -37,6 +37,7 @@ article{
 
 
 /*Breakpoint 0, alles unter 960px*/
+@media(min-width: 1px){
 #body_wrapper{
 	width: 480px;
 	margin: 20px auto;
@@ -266,8 +267,7 @@ h3{
 	width: 200px;
 	}
 }
-
-
+}
 
 /*Breakpoint 2, ab 1920px*/
 @media(min-width:  1920px){

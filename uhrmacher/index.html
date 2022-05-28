@@ -17,9 +17,13 @@
 		<link rel="stylesheet" href="https://use.typekit.net/ney3aoa.css">
 	</head>
 
-	<body>
+	<body onload="OnLoad()">
 		<!-- script -->
 		<script>
+			function OnLoad(){
+
+			}
+
 			function toggle(id){
 				var burgerMenu = document.getElementById(id);
 				if(burgerMenu.style.display == "none" || burgerMenu.style.display == ""){
@@ -31,19 +35,20 @@
 		</script>
 		<script>
 			function grow(id){
+				
+				var nav = document.getElementById(id);
+
 				if (window.innerWidth >= 960 && window.innerWidth < 1920){
-					var nav = document.getElementById(id);
 					if(nav.style.display == "none" || nav.style.display == ""){
 						nav.style.display = "block";
 					    nav.style.width = "140px";
 					    nav.style.height = "205px"
 					}else{
 						nav.style.display = "";
-					    nav.style.width = "13px";
-					    nav.style.height = "218px"
+					    nav.style.removeProperty("height");
+				    	nav.style.removeProperty("width");
 					}
 				}
-				else{return;}
 			}
 		</script>
 
