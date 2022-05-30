@@ -17,27 +17,60 @@
 		<link rel="stylesheet" href="https://use.typekit.net/ney3aoa.css">
 	</head>
 
-	<body onload="OnLoad()">
+	<body onload="onLoad()" onunload="onUnload">
 		<!-- script -->
 		<script>
-			function OnLoad(){
+			// Reference to the burger menu
+			let burgerMenu;
+			// Reference to the nav
+			let nav;
+			// True if the burger menu is opened
+			let isBurgerMenuOpen = false;
 
+			// called when the website loads.
+			// caches all relevant elements and listens to the window's "resize" event.
+			function onLoad(){
+				nav = document.getElementById("nav");
+				burgerMenu = document.getElementById("nav_all");
+				window.addEventListener("resize", onWindowResize);
 			}
-
-			function toggle(id){
-				var burgerMenu = document.getElementById(id);
-				if(burgerMenu.style.display == "none" || burgerMenu.style.display == ""){
-				    burgerMenu.style.display = "block";
-				}else{
-				    burgerMenu.style.display = "none";
+			
+			// called when the webiste unloads.
+			// stops listening to the window's "resize" event.
+			function onUnload(){
+				window.removeEventListener("resize", onWindowResize);
+			}
+			
+			// closes the burger menu and resets the nav's styling.
+			function onWindowResize(){
+				closeBurgerMenu();
+				nav.style.display = "";
+				nav.style.removeProperty("height");
+				nav.style.removeProperty("width");
+			}
+			
+			// opens or closes the burger menu depending on its state.
+			function toggle(){
+				if (isBurgerMenuOpen) {
+					closeBurgerMenu();
+				} else {
+					openBurgerMenu();
 				}
 			}
-		</script>
-		<script>
-			function grow(id){
-				
-				var nav = document.getElementById(id);
+			
+			// opens the burger menu and set the flag accordingly.
+			function openBurgerMenu(){
+				burgerMenu.style.display = "block";
+				isBurgerMenuOpen = true;
+			}
 
+			// closes the burger menu and set the flag accordingly.
+			function closeBurgerMenu(){
+				burgerMenu.style.display = "none";
+				isBurgerMenuOpen = false;
+			}
+			
+			function grow(){
 				if (window.innerWidth >= 960 && window.innerWidth < 1920){
 					if(nav.style.display == "none" || nav.style.display == ""){
 						nav.style.display = "block";
@@ -87,7 +120,7 @@
 				<div id="nav_banner_wrapper">
 				<!-- navigaiton -->
 					<nav id="nav" class="padding">
-						<div id="nav_button" onClick="toggle('nav_all');grow('nav')"></div>
+						<div id="nav_button" onClick="toggle();grow()"></div>
 						<div id="nav_all">
 							<ul class="nav_parts">
 					        	<li><a href="#">Home</a></li>
