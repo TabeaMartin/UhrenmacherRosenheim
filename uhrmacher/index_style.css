@@ -275,13 +275,26 @@ h3{
 		width: 1920px;
 		display: block;
 	}
-	#content{width: 960px;}
+	#content{width: 1920px;}
 
 	/*HEADER*/
 	#header_ohneLogo{width: 1760px;}
 
 	/*NAV*/
-	article{width: calc(100% / 3);}
+	#nav_banner_wrapper{display: block;}
+	#nav_button{display: none;}
+	#nav_all{
+		display: flex;
+		width: 1880px;
+		height: 30px;
+	}
+	#nav{padding: 0px;}
+
+	.nav_parts{display: flex;}
+
+	li{width: 200px;}
+
+	/*
 	nav{
 		width: 100%;
 		padding: 0px;
@@ -292,10 +305,15 @@ h3{
 	li{
 		width: calc(100%/5);
 		text-align: center;
-	}
+	}*/
 
 		/*UHREN*/
 	.uhr{
-		width: 960px;
+		display: flex;
+	}
+
+	/*FOOTER*/
+	.normal_footer{
+	width: 400px;
 	}
 }
