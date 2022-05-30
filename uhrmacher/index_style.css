@@ -288,7 +288,11 @@ h3{
 		width: 1880px;
 		height: 30px;
 	}
-	nav{padding: 0px;}
+	nav{
+		padding: 0px;
+		height: 60px;
+		width: auto;
+	}
 
 	.nav_parts{display: flex;}
 

@@ -43,15 +43,16 @@
 			
 			// closes the burger menu and resets the nav's styling.
 			function onWindowResize(){
-				if (window.innerWidth > 1920){
+				nav.style.display = "";
+				nav.style.removeProperty("height");
+				nav.style.removeProperty("width");
+				
+				if (window.innerWidth >= 1920){
 					burgerMenu.style.display = "flex";
 					return;
 				}
 				
 				closeBurgerMenu();
-				nav.style.display = "";
-				nav.style.removeProperty("height");
-				nav.style.removeProperty("width");
 			}
 			
 			// opens or closes the burger menu depending on its state.
