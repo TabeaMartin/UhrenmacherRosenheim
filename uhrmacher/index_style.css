@@ -38,191 +38,190 @@ article{
 
 /*Breakpoint 0, alles unter 960px*/
 @media(min-width: 1px){
-#body_wrapper{
-	width: 480px;
-	margin: 20px auto;
-	background-color: #6494aa;
-	display: flex;
+	#body_wrapper{
+		width: 480px;
+		margin: 20px auto;
+		background-color: #6494aa;
+		display: flex;
+	}
+	#content{
+		margin: auto;
+		width: 480px;
+	}
+	
+	.padding{
+		padding-left: 36px;
+		padding-right: 36px;
+		position: relative;
+	}
+	
+	/*HEADER*/
+	#top_logo{width: 100px; height: 100px;}
+	#header_wrapper{display: flex;}
+	#SoMeParent{
+		position: relative;
+		height: 80px;
+	}
+	#SoMe{
+		display: flex;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	#header_ohneLogo{
+		width: 320px; 
+		padding-top: 7px;
+	}
+	#header_puffer{height: 10px;}
+	#slogan_wrapper{padding-top: 12px;}
+	
+	.SoMeLogo{
+		color: #0000b1;
+		margin: 5px;
+	}
+	.slogan{
+		color: #0000b1;
+		font-weight: 300;
+		font-size: 10px;
+		padding-right: 2px;
+	}
+	
+	
+	h4{
+		color: #0000b1;
+		font-size: 12px;
+	}
+	
+	/*NAV*/
+	#nav_button{
+	  width: 30px;
+	  height: 30px;
+	  /*background-color: #0000b1;*/
+	  transition: transform 0.2s ease-in-out;
+	  background-image: url("pics/burger_button.png");
+	  background-size: cover;
+	}
+	#nav_button:hover{
+	  transform: scale(1.2);
+	}
+	#nav_all{
+	  display: none;
+	  position: absolute;
+	  background-color: #c8c9d7;
+	  padding: 10px;
+	  padding-left: 30px;
+	  margin-top: 5px;
+	  left: 0px;
+	}
+	.nav_parts{display: flex;}
+	
+	nav{
+		background-color: #c8c9d7;
+		padding: 10px;
+		width: 408px;
+	}
+	li{
+		list-style: none;
+		padding: 5px;
+		width: 136.5px;
+	} 
+	li>a{	
+		color: #4d4765;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	img{
+		width: 100%;
+		display: block;
+	}
+	li>a:hover{color: #0000b1;}
+	
+	/*BANNER_INTRO*/
+	#intro{
+		background-color: #4d4765;
+		color: #c8c9d7;
+		font-size: 10px;
+		text-align: center;
+		font-weight: 300;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	#bold_big{
+		font-size: 12px;
+		font-weight: 700;
+	}
+	#bold{
+		font-weight: 700;
+	}
+	
+	/*UHREN*/
+	.puffer{
+		background-color: #6494aa;
+		width: 100%;
+		height: 10px;
+	}
+	.uhr{
+		background-color: #c8c9d7;
+		padding-bottom: 20px;
+	}
+	.uhr_foto{height: 480px}
+	
+	#text_puffer{height: 0px;}
+	#uhr4{
+		padding-top: 20px; 
+		padding-bottom: 20px;
+	}
+	#letzter_puffer{height: 0px;}
+	
+	h3{
+		color: #0000b1;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+	}
+	
+	/*FOOTER*/
+	#footer_wrapper{
+		display: flex;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.footer{height: 70px;}
+	
+	.yellow_button{
+		padding: 5px;
+		margin-top: 20px;
+		background-color: #e8cc61;
+		font-weight: 700;
+		font-size: 10px;
+		color: #0000b1;
+		transition: font-size 0.2s ease-in-out;
+	}
+	
+	.yellow_button:hover{font-size: 12px;}
+	
+	.normal_footer{
+		width: 170px;
+		margin-top: 10px;
+		font-size: 6px;
+		color: #0000b1;
+		font-weight: 300;
+		font-size: 10px;
+	}
+	
+	#bottom_logo_parent{
+		position: relative;
+	}
+	
+	#bottom_logo{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: -10px;
+		right: 35px;
+	}
 }
-#content{
-	margin: auto;
-	width: 480px;
-}
-
-.padding{
-	padding-left: 36px;
-	padding-right: 36px;
-	position: relative;
-}
-
-/*HEADER*/
-#top_logo{width: 100px; height: 100px;}
-#header_wrapper{display: flex;}
-#SoMeParent{
-	position: relative;
-	height: 80px;
-}
-#SoMe{
-	display: flex;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-}
-#header_ohneLogo{
-	width: 320px; 
-	padding-top: 7px;
-}
-#header_puffer{height: 10px;}
-#slogan_wrapper{padding-top: 12px;}
-
-.SoMeLogo{
-	color: #0000b1;
-	margin: 5px;
-}
-.slogan{
-	color: #0000b1;
-	font-weight: 300;
-	font-size: 10px;
-	padding-right: 2px;
-}
-
-
-h4{
-	color: #0000b1;
-	font-size: 12px;
-}
-
-/*NAV*/
-#nav_button{
-  width: 30px;
-  height: 30px;
-  /*background-color: #0000b1;*/
-  transition: transform 0.2s ease-in-out;
-  background-image: url("pics/burger_button.png");
-  background-size: cover;
-}
-#nav_button:hover{
-  transform: scale(1.2);
-}
-#nav_all{
-  display: none;
-  position: absolute;
-  background-color: #c8c9d7;
-  padding: 10px;
-  padding-left: 30px;
-  margin-top: 5px;
-  left: 0px;
-}
-.nav_parts{display: flex;}
-
-nav{
-	background-color: #c8c9d7;
-	padding: 10px;
-	width: 408px;
-}
-li{
-	list-style: none;
-	padding: 5px;
-	width: 136.5px;
-} 
-li>a{	
-	color: #4d4765;
-	font-size: 16px;
-	font-weight: 700;
-}
-img{
-	width: 100%;
-	display: block;
-}
-li>a:hover{color: #0000b1;}
-
-/*BANNER_INTRO*/
-#intro{
-	background-color: #4d4765;
-	color: #c8c9d7;
-	font-size: 10px;
-	text-align: center;
-	font-weight: 300;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-#bold_big{
-	font-size: 12px;
-	font-weight: 700;
-}
-#bold{
-	font-weight: 700;
-}
-
-/*UHREN*/
-.puffer{
-	background-color: #6494aa;
-	width: 100%;
-	height: 10px;
-}
-.uhr{
-	background-color: #c8c9d7;
-	padding-bottom: 20px;
-}
-.uhr_foto{height: 480px}
-
-#text_puffer{height: 0px;}
-#uhr4{
-	padding-top: 20px; 
-	padding-bottom: 20px;
-}
-#letzter_puffer{height: 0px;}
-
-h3{
-	color: #0000b1;
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-}
-
-/*FOOTER*/
-#footer_wrapper{
-	display: flex;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.footer{height: 70px;}
-
-.yellow_button{
-	padding: 5px;
-	margin-top: 20px;
-	background-color: #e8cc61;
-	font-weight: 700;
-	font-size: 10px;
-	color: #0000b1;
-	transition: font-size 0.2s ease-in-out;
-}
-
-.yellow_button:hover{font-size: 12px;}
-
-.normal_footer{
-	width: 170px;
-	margin-top: 10px;
-	font-size: 6px;
-	color: #0000b1;
-	font-weight: 300;
-	font-size: 10px;
-}
-
-#bottom_logo_parent{
-	position: relative;
-}
-
-#bottom_logo{
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	top: -10px;
-	right: 35px;
-}
-
-
 
 /*Breakpoint 1, ab 960px*/
 @media(min-width: 960px){
@@ -275,7 +274,6 @@ h3{
 	.normal_footer{
 	width: 200px;
 	}
-}
 }
 
 /*Breakpoint 2, ab 1920px*/
