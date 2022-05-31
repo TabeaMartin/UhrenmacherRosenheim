@@ -208,7 +208,9 @@ article{
 		transition: font-size 0.2s ease-in-out;
 	}
 	
-	.yellow_button:hover{font-size: 12px;}
+	.yellow_button:hover{
+		font-size: 12px;
+	}
 	
 	.normal_footer{
 		width: 170px;
@@ -362,6 +364,10 @@ article{
 		height: 20px;
 		margin-right: 50px;
 		font-size: 16px;
+		transition: transform 0.2s ease-in-out;
 	}
-	.yellow_button:hover{font-size: 20px;}
+	.yellow_button:hover{
+		font-size: 16px;
+		transform: scale(1.2);
+	}
 }
