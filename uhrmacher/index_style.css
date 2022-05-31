@@ -35,6 +35,15 @@ article{
 	font-size: 12px;
 }
 
+.SoMeLogo{
+	font-size: 2em;
+	color: #0000b1;
+	transition: transform 0.2s ease-in-out;
+}
+
+.SoMeLogo:hover{
+	transform: scale(1.2);
+}
 
 /*Breakpoint 0, alles unter 960px*/
 @media(min-width: 1px){
