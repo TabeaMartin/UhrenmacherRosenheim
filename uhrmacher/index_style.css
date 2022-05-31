@@ -232,13 +232,17 @@ h3{
 	#content{width: 960px;}
 
 	/*HEADER*/
-	#header_puffer{height: 23px;}
 	#header_ohneLogo{width: 800px;}
 	#slogan_wrapper{
 		display: flex;
 		padding-top: 5px;
 	}
+	#header_puffer{height: 22px;}
 	#SoMe{font-size: 20px;}
+
+	.slogan{font-size: 12px;}
+
+	h4{font-size: 14px;}
 
 	/*INTRO*/
 	#intro{padding: 15px 110px;}
@@ -284,7 +288,12 @@ h3{
 
 	/*HEADER*/
 	#header_ohneLogo{width: 1760px;}
+	#header_puffer{height: 21px;}
+	#slogan_wrapper{padding-top: 2px;}
 
+	.slogan{font-size: 14px;}
+
+	h4{font-size: 16px;}
 
 	/*NAV*/
 	#nav_banner_wrapper{display: block;}
