@@ -7,14 +7,6 @@ hell-blau-grau #c8c9d7
 mittel-blau-grau #6494aa
 dunkel-blau-grau #4d4765
 
-Fonts:
-font-family: neue-haas-grotesk-display, sans-serif
-Light: font-weight: 300
-Roman: font-weight: 500
-Bold: font-weight: 700
-
-*/
-
 /*PAGE*/
 *{
 	margin: 0;
@@ -110,7 +102,6 @@ article{
 	#nav_button{
 	  width: 30px;
 	  height: 30px;
-	  /*background-color: #0000b1;*/
 	  transition: transform 0.2s ease-in-out;
 	  background-image: url("pics/burger_button.png");
 	  background-size: cover;

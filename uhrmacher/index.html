@@ -20,28 +20,30 @@
 	<body onload="onLoad()" onunload="onUnload">
 		<!-- script -->
 		<script>
-			// Reference to the burger menu
+			// referenz zum burger menu
 			let burgerMenu;
-			// Reference to the nav
+			// referenz zur nav
 			let nav;
-			// True if the burger menu is opened
+			// true wenn das burger menu offen ist
 			let isBurgerMenuOpen = false;
 
-			// called when the website loads.
-			// caches all relevant elements and listens to the window's "resize" event.
+			// aufgerufen, wenn die website geladen wird und
+			// cached alle relevanten elemente für das skript und abonniert das
+			// "resize" event von der window klasse
 			function onLoad(){
 				nav = document.getElementById("nav");
 				burgerMenu = document.getElementById("nav_all");
 				window.addEventListener("resize", onWindowResize);
 			}
-			
-			// called when the webiste unloads.
-			// stops listening to the window's "resize" event.
+
+			// aufgerufen, wenn die website entladen wird und
+			// deabonniert das "resize" event von der window klasse
 			function onUnload(){
 				window.removeEventListener("resize", onWindowResize);
 			}
 			
-			// closes the burger menu and resets the nav's styling.
+			// aufgerufen, wenn die fenstergröße sich ändert und
+			// schließt das burger menü und setzt das nav-styling zurück
 			function onWindowResize(){
 				nav.style.display = "";
 				nav.style.removeProperty("height");
@@ -55,7 +57,7 @@
 				closeBurgerMenu();
 			}
 			
-			// opens or closes the burger menu depending on its state.
+			// öffnet oder schließt das burger menü abhängig von dessen status
 			function toggle(){
 				if (isBurgerMenuOpen) {
 					closeBurgerMenu();
@@ -64,25 +66,29 @@
 				}
 			}
 			
-			// opens the burger menu and set the flag accordingly.
+			// öffnet das burger menü
 			function openBurgerMenu(){
 				burgerMenu.style.display = "block";
 				isBurgerMenuOpen = true;
 			}
 
-			// closes the burger menu and set the flag accordingly.
+			// schließt das burger menü
 			function closeBurgerMenu(){
 				burgerMenu.style.display = "none";
 				isBurgerMenuOpen = false;
 			}
 			
+			// hilfsfunktion zum ausklappen des burger menüs im tablett modus für die nav
 			function grow(){
 				if (window.innerWidth >= 960 && window.innerWidth < 1920){
+					// nur ausführen, wenn in tablett modus
 					if(nav.style.display == "none" || nav.style.display == ""){
+						// wenn nav nicht ausgeklappt - klapp aus
 						nav.style.display = "block";
 					    nav.style.width = "140px";
 					    nav.style.height = "204px"
 					}else{
+						// wenn nav ausgeklappt - klapp ein
 						nav.style.display = "";
 					    nav.style.removeProperty("height");
 				    	nav.style.removeProperty("width");
@@ -121,7 +127,7 @@
 				</div>
 
 				<div id="nav_banner_wrapper">
-				<!-- navigaiton -->
+				<!-- navigation -->
 					<nav id="nav" class="padding">
 						<div id="nav_button" onClick="toggle();grow()"></div>
 						<div id="nav_all">
