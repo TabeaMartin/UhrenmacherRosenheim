@@ -36,7 +36,7 @@ article{
 }
 
 .SoMeLogo{
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #0000b1;
 	transition: transform 0.2s ease-in-out;
 }
@@ -56,6 +56,11 @@ article{
 	#content{
 		margin: auto;
 		width: 480px;
+	}
+
+	.fab{
+		padding-right: 5px;
+		padding-left: 5px;
 	}
 	
 	.padding{
@@ -249,7 +254,15 @@ article{
 	}
 	#header_puffer{height: 22px;}
 	#SoMe{font-size: 20px;}
-
+	.SoMeLogo{
+		font-size: 2em;
+	}
+	
+	.fab{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
 	.slogan{font-size: 12px;}
 
 	h4{font-size: 14px;}
@@ -264,8 +277,8 @@ article{
 	.nav_parts{display: block;}
 
 	nav{
-		height: 219px; 
-		width: 10px;
+		height: 218px; 
+		width: 14px;
 	}
 	li{width: 83px;}
 
@@ -283,7 +296,11 @@ article{
 
 	/*FOOTER*/
 	.normal_footer{
-	width: 200px;
+		width: 200px;
+	}
+	
+	#bottom_logo{
+		top: -5px;
 	}
 }
 
@@ -299,7 +316,7 @@ article{
 	#header_ohneLogo{width: 1760px;}
 	#header_puffer{height: 21px;}
 	#slogan_wrapper{padding-top: 2px;}
-
+		
 	.slogan{font-size: 14px;}
 
 	h4{font-size: 16px;}
@@ -355,7 +372,11 @@ article{
 	article{font-size: 14px;}
 
 	/*FOOTER*/
-	.normal_footer{width: 150px;}
+	.normal_footer{
+		width: 180px;
+		font-size: 12px;
+		padding-top: 5px;
+	}
 	.footer{
 		padding-left: 80px;
 		display: flex;
